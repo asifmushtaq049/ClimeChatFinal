@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/createNewGroup"
+        android:title="@string/create_new_group"
+        android:icon="@drawable/icon_group_add"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/notifications"
+        android:title="@string/notifications"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/help"
+        android:title="Help"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        app:showAsAction="never"/>
+    <!--<item-->
+        <!--android:title="@string/options"-->
+        <!--android:id="@+id/empty"-->
+        <!--android:icon="@drawable/overflow_menu"-->
+        <!--app:showAsAction="ifRoom">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/showNotifications"-->
+                <!--android:title="@string/notifications"-->
+                <!--app:showAsAction="always"-->
+                <!--/>-->
+        <!--</menu>-->
+    <!--</item>-->
+</menu>

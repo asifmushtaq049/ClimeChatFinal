@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">ClimeChat</string>
+    <string name="create_new_group">Create New Group</string>
+    <string name="enter_group_name">Enter Group Name</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_group">Delete Group</string>
+    <string name="group_created">Group has been created!</string>
+    <string name="group_deleted">Group has been deleted!</string>
+    <string name="type_your_message">Type your message here</string>
+    <string name="send">SEND</string>
+    <string name="add_member">Add Member</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="invited_to_join">invited to join</string>
+    <string name="view_members">View Members</string>
+    <string name="leave_group">Leave Group</string>
+    <string name="about_group">About Group</string>
+    <string name="options">Options</string>
+    <string name="remove_member">Remove Member</string>
+    <string name="no_member_joined">No member joined yet!</string>
+    <string name="invited">Invited</string>
+    <string name="joined">Joined</string>
+    <string name="selected_member_invited">Selected members are invited!</string>
+    <string name="notifications">Notifications</string>
+    <string name="join_group">Join Group</string>
+    <string name="remove_notification">Remove Notification</string>
+    <string name="about">About</string>
+    <string name="conversations">Conversations</string>
+    <string name="chat">Chat</string>
+    <string name="file_share">File Share</string>
+    <string name="history">History</string>
+    <string name="notification">Notifications</string>
+    <string name="choose_a_contact_to_add">Choose a contact to add</string>
+    <string name="send_button_text">Send Button</string>
+    <string name="delete">Delete</string>
+    <string name="points_coming_soon">Points system coming soon!</string>
+    <string name="time_icon">Time Icon</string>
+    <string name="category_icon">Category Icon</string>
+    <string name="messageStatus">Message Status</string>
+    <string name="join_icon">Join Icon</string>
+    <string name="cancel_icon">Cancel Icon</string>
+    <string name="you_are_invited_to_join">You are invited to join</string>
+    <string name="invited_to_join_group">You are invited to join {Good Luck Imran Khan PTI Official} Group</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/invited_to_join_group"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tagIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/category_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notificationTitle"
+        app:srcCompat="@drawable/icon_tag" />
+
+    <TextView
+        android:id="@+id/notificationCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:text="Join Group"
+        android:textColor="#aab8c2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tagIcon"
+        app:layout_constraintStart_toEndOf="@+id/tagIcon"
+        app:layout_constraintTop_toTopOf="@+id/tagIcon" />
+
+
+    <ImageView
+        android:id="@+id/timeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/time_icon"
+        app:layout_constraintStart_toEndOf="@+id/notificationCategory"
+        app:layout_constraintTop_toBottomOf="@+id/notificationTitle"
+        app:srcCompat="@drawable/icon_time"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <TextView
+        android:id="@+id/notificationTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:text="3 min ago"
+        android:textColor="#aab8c2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/timeIcon"
+        app:layout_constraintStart_toEndOf="@+id/timeIcon"
+        app:layout_constraintTop_toTopOf="@+id/timeIcon" />
+
+    <ImageView
+        android:id="@+id/cancelIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon_cancel"
+        app:layout_constraintEnd_toStartOf="@+id/notificationCancel"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/notificationTitle" />
+
+    <TextView
+        android:id="@+id/notificationCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Cancel"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/cancelIcon"
+        app:layout_constraintEnd_toStartOf="@+id/joinIcon"
+        app:layout_constraintTop_toTopOf="@+id/cancelIcon" />
+
+    <ImageView
+        android:id="@+id/joinIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon_join"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginEnd="3dp"
+        android:contentDescription="@string/join_icon"
+        app:layout_constraintTop_toBottomOf="@+id/notificationTitle"
+        app:layout_constraintEnd_toStartOf="@+id/notificationJoin" />
+
+    <TextView
+        android:id="@+id/notificationJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/joinIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/joinIcon" />
+
+
+</android.support.constraint.ConstraintLayout>

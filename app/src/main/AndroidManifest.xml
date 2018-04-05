@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.climesoft.climechat">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CreateGroupActivity"
+            android:label="@string/create_new_group" />
+        <activity android:name=".ConversationActivity" />
+        <activity
+            android:name=".NotificationActivity"
+            android:label="@string/notifications"/>
+
+        <receiver
+            android:name=".broadcasters.SMSReceivedBroadcaster"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:exported="false" android:name=".broadcasters.SMSSentBroadcaster">
+            <intent-filter>
+                <action android:name="com.climesoft.climechat.SMS_SENT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:exported="false" android:name=".broadcasters.SMSResendBroadcaster">
+            <intent-filter>
+                <action android:name="com.climesoft.climechat.SMS_RESEND" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:exported="false" android:name=".broadcasters.SMSGroupLeaveBroadcaster">
+            <intent-filter>
+                <action android:name="com.climesoft.climechat.SMS_LEAVE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:exported="false" android:name=".broadcasters.SMSMemberDeleteBroadcaster">
+            <intent-filter>
+                <action android:name="com.climesoft.climechat.MEMBER_REMOVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:exported="false" android:name=".broadcasters.SMSGroupJoinBroadcaster">
+            <intent-filter>
+                <action android:name="com.climesoft.climechat.NOTIFICATION_RESPONSE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".MembersActivity" />
+        <activity android:name=".AboutGroupActivity"/>
+    </application>
+
+</manifest>

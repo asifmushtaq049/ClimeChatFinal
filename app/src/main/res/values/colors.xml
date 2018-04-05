@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="conversation_bg">#D8F5F1</color>
+
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorPrimaryLight">#BBDEFB</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorToolbarIcons">@color/white</color>
+    <color name="colorToolbarText">@color/white</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="gray">#DDDDDD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="tab_background_selected">@color/colorPrimary</color>
+    <color name="tab_background_unselected">@color/colorPrimaryDark</color>
+    <color name="lightBlack">#555555</color>
+    <color name="light_green">#25D366</color>
+    <color name="notify_accept_color">#F1F8E9</color>
+    <color name="notify_reject_color">#ffebee</color>
+    <color name="chat_background">#EEEEEE</color>
+    <color name="selected_item_background">@color/gray</color>
+    <color name="message_date">#BBB</color>
+    <color name="waiting_color">#FDD835</color>
+    <color name="about_group_dark_gray">#757575</color>
+    <color name="color_about_group_divider">#BBBBBB</color>
+    <color name="color_message_from">#757575</color>
+</resources>

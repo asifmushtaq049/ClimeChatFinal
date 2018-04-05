@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingEnd="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingStart="8dp">
+
+    <EditText
+        android:id="@+id/sendMessageField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/round_edit_text"
+        android:ems="10"
+        android:hint="@string/type_your_message"
+        android:inputType="textCapSentences"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/sendMessageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+        android:onClick="sendMessage"
+        android:contentDescription="@string/send_button_text"
+        android:background="@drawable/round_send_button"
+        app:srcCompat="@drawable/icon_send" />
+
+</LinearLayout>
